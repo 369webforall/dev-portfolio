@@ -1,7 +1,6 @@
-import React from "react";
+import { redirect } from "next/navigation";
 
-const Page = () => {
-  return <div>Page</div>;
-};
-
-export default Page;
+export default function IndexPage() {
+  redirect("/home");
+  return null;
+}
